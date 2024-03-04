@@ -1,0 +1,13 @@
+.container{
+    max-width: 1350px;
+    margin: auto;
+    
+}
+
+body{
+    background-color: rgb(233, 202, 156);
+}
+
+.card{
+    margin-top: 5rem;
+}
