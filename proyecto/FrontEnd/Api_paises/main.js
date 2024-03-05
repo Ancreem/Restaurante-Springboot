@@ -33,7 +33,8 @@ document.addEventListener("DOMContentLoaded", async ()=>{
     function filterCountries(searchTerm) {
         
         return res.filter(plato =>
-            
+            plato.id == searchTerm ||
+            plato.precio == searchTerm ||
             plato.nombre.toLowerCase().includes(searchTerm.toLowerCase()) ||
             plato.descripcion.toLowerCase().includes(searchTerm.toLowerCase()) 
             

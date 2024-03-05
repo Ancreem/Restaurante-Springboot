@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
 
 body {
-	background: #222;
+	background: #292828;
 	padding: 0;
 	margin: 0;
   
@@ -15,11 +15,17 @@ body {
 	background: linear-gradient(141deg, cyan 0%, rebeccapurple 40%, deeppink 90%);
 }
 
-h1 {
+h1{
   font-family: 'Oswald', sans-serif;
   color: white;
   font-size: 10vw;
   font-weight: 300;
+	text-transform: uppercase;
+}
+
+.titulos{
+  font-family: 'Oswald', sans-serif;
+  color: white;
 	text-transform: uppercase;
 }
 
@@ -55,7 +61,7 @@ img{
 .site {
   padding: 5em 0;
   text-align: center;
-  background-color: #e0e0e0;
+  background-color: #837c7c;
   font-size: .8em;
   color: #444;
   position:relative
@@ -95,16 +101,20 @@ img{
   box-shadow: 2px 2px 8px 4px #d3d3d3d1;
   border-radius:15px;
   font-family: sans-serif;
+  background-color: #494040;
+  margin-top: 10px;
+  margin-inline: 20px;
 }
 .titulo{
   font-size: 24px;
-  padding: 10px 10px 0 10px;;
+  padding: 10px 10px 0 10px;
+  color: #ffffff;
 }
 .cuerpo{
   padding: 10px;
 }
 .pie{
-  background: #6699ff;
+  background: #1c1c1d;
   border-radius:0 0 15px 15px;
   padding: 10px;
   text-align:left;
@@ -182,7 +192,7 @@ img{
 .controls, .controlsTwo, .controlsThree {
   width: 100%;
   color: rgb(241, 241, 241);
-  background-color: #321042a6;
+  background-color: #201c22a6;
   padding: 10px;
   border-radius: 4px;
   margin-bottom: 10px;
@@ -223,7 +233,7 @@ img{
 }
 
 .form {
-  background: linear-gradient(45deg, #8c00ff 0%, #2bff00 81%);
+  background: linear-gradient(45deg, #4b694d 0%, #7a8078 81%);
   background-size: 400% 400%;
   position: relative;
   padding: 30px;
@@ -231,6 +241,14 @@ img{
   box-shadow: 7px 13px 37px #100e2f;
   animation: gradiente 5s ease infinite;
   margin-bottom: 50px;
+}
+
+.subtitle {
+  color: white;
+}
+
+form {
+  margin-bottom: 20px;
 }
 
 @keyframes gradiente {
@@ -243,6 +261,12 @@ img{
   100% {
       background-position: 0% 50%;
   }
+}
+
+.tarjeta img {
+  width: 200px; /* Establece el ancho deseado para todas las imágenes */
+  height: 150px; /* Establece la altura deseada para todas las imágenes */
+  object-fit: cover; /* Ajusta la imagen dentro del contenedor manteniendo su relación de aspecto */
 }
 
 

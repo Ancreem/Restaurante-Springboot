@@ -22,14 +22,18 @@
 
 
   <section class="site"> 
-    <input type="text" id="search-input" placeholder="Buscar país...">
+    <div class="titulos"><h2>Buscador</h2></div>
+    
+    <input type="text" id="search-input" placeholder="Buscar Plato el Id del plato...">
+
+    <div class="titulos"><h2>Formularios</h2></div>
     <section class="form container" id="forms">
       <div class="formIngresar">
           <h4 class="subtitle">Ingresar platos</h4>
           <form id="ingresarPlatoForm">
               <input class="controls" name="namePlato" type="text" class="form-control" id="nombrePlato" placeholder="Nombre del Plato">
               <input class="controls" name="descripPlato" type="text" class="form-control" id="descripcionPlato" placeholder="Descripcion del Plato">
-              <input class="controls" name="imgPlato" type="text" class="form-control" id="imgPlato" placeholder="Imagen del plato">
+              <input class="controls" name="imgPlato" type="text" class="form-control" id="imgPlato" placeholder="Imagen del plato" >
               <input class="controls" name="precioPlato" type="number" class="form-control" id="precioPlato" placeholder="Precio del Plato">
               <div class="buttons">
                   <button class="button" id="enviarPlatoBtn" type="submit">Enviar</button>
@@ -61,6 +65,8 @@
           </form>
       </div>
   </section>
+
+  <div class="titulos"><h2>Platos</h2></div>
 
     
     <div id="countries-response"></div>
