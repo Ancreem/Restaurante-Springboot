@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+  <div class='top'></div>
+  <div class='text'>
+    <h1>Restaurante <br> Platos </h1>
+    
+  </div>
+
+
+
+  <section class="site"> 
+    <input type="text" id="search-input" placeholder="Buscar país...">
+    <section class="form container" id="forms">
+      <div class="formIngresar">
+          <h4 class="subtitle">Ingresar platos</h4>
+          <form id="ingresarPlatoForm">
+              <input class="controls" name="namePlato" type="text" class="form-control" id="nombrePlato" placeholder="Nombre del Plato">
+              <input class="controls" name="descripPlato" type="text" class="form-control" id="descripcionPlato" placeholder="Descripcion del Plato">
+              <input class="controls" name="imgPlato" type="text" class="form-control" id="imgPlato" placeholder="Imagen del plato">
+              <input class="controls" name="precioPlato" type="number" class="form-control" id="precioPlato" placeholder="Precio del Plato">
+              <div class="buttons">
+                  <button class="button" id="enviarPlatoBtn" type="submit">Enviar</button>
+              </div>
+          </form>
+      </div>
+      
+      <div class="formEliminar">
+          <h4 class="subtitle">Eliminar platos</h4>
+          <form id="eliminarPlatoForm">
+              <input class="controlsTwo" name="idPlato" type="number" class="form-control" id="idEliminarPlato" placeholder="Id Plato">
+              <div class="buttons">
+                  <button class="button" id="eliminarPlatoBtn">Eliminar</button>
+              </div>
+          </form>
+      </div>
+  
+      <div class="formEditar">
+          <h4 class="subtitle">Editar platos</h4>
+          <form id="editarForm" method="PUT">
+              <input class="controlsThree" name="idPlatos" type="number" class="form-control" id="idEditarPlato" placeholder="Id plato para actualizar">
+              <input class="controlsThree" name="nameEditarPlato" type="text" class="form-control" id="nombrePlatoEditar" placeholder="Nombre del Plato">
+              <input class="controlsThree" name="descripcionPlato" type="text" class="form-control" id="descripcionPlatoEditar" placeholder="Descripcion del Plato">
+              <input class="controlsThree" name="imgPlato" type="text" class="form-control" id="imgPlato" placeholder="Imagen del plato">
+              <input class="controlsThree" name="precioPlato" type="number" class="form-control" id="precioPlatoEditar" placeholder="Precio del Plato">
+              <div class="buttons">
+                  <button class="button" type="submit" id="actualizarPlatoBtn">Actualizar</button>
+              </div>
+          </form>
+      </div>
+  </section>
+
+    
+    <div id="countries-response"></div>
+    
+  </section>
+</body>
+</html>

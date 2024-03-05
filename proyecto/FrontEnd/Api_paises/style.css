@@ -1,0 +1,248 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+body {
+	background: #222;
+	padding: 0;
+	margin: 0;
+  
+}
+
+.top {
+	position: relative;
+	height: 10px;
+	background: linear-gradient(141deg, cyan 0%, rebeccapurple 40%, deeppink 90%);
+}
+
+h1 {
+  font-family: 'Oswald', sans-serif;
+  color: white;
+  font-size: 10vw;
+  font-weight: 300;
+	text-transform: uppercase;
+}
+
+.text {
+
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  height: 100vh;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+html {
+  font: 1em/1.5 "Lato", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizelegibility;
+  min-width: 440px;
+}
+
+body {
+  font-size: 1.3em;
+}
+
+img{
+  margin-right:20px
+}
+.site {
+  padding: 5em 0;
+  text-align: center;
+  background-color: #e0e0e0;
+  font-size: .8em;
+  color: #444;
+  position:relative
+}
+.site a {
+  color: #666;
+  text-decoration: none;
+}
+.site a:hover {
+  color: #222;
+}
+
+.site nav{
+  position:absolute;
+  top:0;
+  left:0;
+  background:#222;
+  width:100%
+}
+.site nav a{
+  padding:10px 30px;
+  font-size:1.3em;
+  display:inline-block
+}
+.site nav a:hover{
+  background:#333;
+  color:#fff
+}
+
+
+.tarjeta{
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  width:420px;
+  border: 1px solid lightgray;
+  box-shadow: 2px 2px 8px 4px #d3d3d3d1;
+  border-radius:15px;
+  font-family: sans-serif;
+}
+.titulo{
+  font-size: 24px;
+  padding: 10px 10px 0 10px;;
+}
+.cuerpo{
+  padding: 10px;
+}
+.pie{
+  background: #6699ff;
+  border-radius:0 0 15px 15px;
+  padding: 10px;
+  text-align:left;
+}
+.pie a{
+  text-decoration: none;
+  color: white;
+}
+
+.pie p{
+  color: white;
+}
+.pie a:after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  content: ""
+}
+
+#countries-response{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.button {
+  border-radius: 0.25em;
+  background: #6699ff;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 500;
+  height: 3em;
+  line-height: 3em;
+  padding: 0 1em;
+}
+.pie:hover {
+  background-color: #acac17;
+}
+
+.button:hover {
+  background-color: #acac17;
+}
+
+/* Tu CSS existente aquí */
+
+
+/* Estilos para el campo de búsqueda */
+#search-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+  background-color: #4d4c4b;
+  color: #fff;
+}
+
+/* Estilos para el placeholder del campo de búsqueda */
+#search-input::placeholder {
+  color: #ffffff;
+}
+
+/* Estilos para cuando el campo de búsqueda tiene el foco */
+#search-input:focus {
+  outline: none; /* Elimina el contorno alrededor del campo al enfocarlo */
+  border-color: #6699ff; /* Cambia el color del borde al enfocar el campo */
+}
+
+.controls, .controlsTwo, .controlsThree {
+  width: 100%;
+  color: rgb(241, 241, 241);
+  background-color: #321042a6;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  border: 1px solid #00000000;
+  font-size: 18px;
+}
+
+.buttons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* Ajusta según sea necesario */
+}
+
+.button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #6adada; /* Color de fondo */
+  color: rgb(33, 32, 32);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Efecto de transición en hover */
+}
+
+.button:hover {
+  background-color: #24780f;
+  color: rgb(241, 238, 255); 
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Permite que los elementos se ajusten a diferentes tamaños de pantalla */
+}
+
+.container > div {
+  margin: 0 10px;
+}
+
+.form {
+  background: linear-gradient(45deg, #8c00ff 0%, #2bff00 81%);
+  background-size: 400% 400%;
+  position: relative;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 7px 13px 37px #100e2f;
+  animation: gradiente 5s ease infinite;
+  margin-bottom: 50px;
+}
+
+@keyframes gradiente {
+  0% {
+      background-position: 0% 50%;
+  }
+   50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+
